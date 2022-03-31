@@ -18,7 +18,7 @@ export class CalculatorComponent implements OnInit {
 
     pressNum(num: string) {
 
-    //Do Not Allow . more than once
+    // No se permite que hayan dos puntos decimales
     if (num==".") {
         if (this.input !="" ) {
 
@@ -28,8 +28,7 @@ export class CalculatorComponent implements OnInit {
         }
     }
 
-    //Do Not Allow 0 at beginning. 
-    //Javascript will throw Octal literals are not allowed in strict mode.
+    // No se permite que un número tenga un 0 a la izquierda
     if (num=="0") {
         if (this.input=="" ) {
             return;
@@ -59,7 +58,7 @@ export class CalculatorComponent implements OnInit {
 
     pressOperator(op: string) {
 
-    //Do not allow operators more than once
+    // No se permiten dos operadores
     const lastKey = this.input[this.input.length - 1];
     if (lastKey === '/' || lastKey === '*' || lastKey === '-' || lastKey === '+')  {
         return;

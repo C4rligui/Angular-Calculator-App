@@ -1,0 +1,2 @@
+Este proyecto consiste en la creación de una calculadora funcional hecha con Angular.
+La calculadora cuenta con funciones de suma, resta, multiplicación y división. También se incluye la funcionalidad de poner números decimales.
